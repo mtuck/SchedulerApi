@@ -119,6 +119,70 @@
   </div>
 </div>
 
+<div id="notification">
+**Get Notifications**
+----
+    Gets an Notifications
+
+* **URL**
+
+  /employee/Notifications/
+
+* **Method:**
+
+  `Get`
+  
+*  **URL Params**
+
+   None
+ 
+  
+
+* **Data Params**
+    None
+
+* **Success Response:**
+
+  * **Code:** 200 SUCCESS<br />
+  **Content:**
+  ```C#
+  //contains a list of notifications
+  List<Notification>
+  //A notification will look like
+   class Notification{
+   int id
+   int empl_id
+   int message
+   int isActive
+  }
+  ```
+
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "User doesn't exist" }`
+
+  OR
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{ error : "You are unauthorized to make this request." }`
+
+* **Sample Call:**
+
+  ```javascript
+    $.ajax({
+      url: "/users/1",
+      dataType: "json",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+  ```
+  </div>
+</div>
+
 
 
 ## Employee Availibility
@@ -171,10 +235,10 @@
   public List<Notifications> getNotifications(){}
   
   class Notification{
-   id
-   empl_id
-   message
-   isActive
+   int id
+   int empl_id
+   int message
+   int isActive
   }
  
  EmployeeTimeOffRequest{
@@ -191,3 +255,21 @@
  public Json GetTimeOffResquest(int empId){}
     
 ```
+
+```
+classs configVar{
+   string locationCode
+   int id
+   string name
+   string  value
+}
+```
+configVar getresoursceList(location, resource_id)
+setresoursceList(configVar)
+set(setore,input,fielD)
+put StoreHurs(storeId, datatable)
+dt getStoreHours(storeId)
+dt getSemployeeschedulue (empl_id)
+string setEmployeeSchedule(empl_id, dt)
+set/view configuration
+
