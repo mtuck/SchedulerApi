@@ -264,6 +264,14 @@ classs configVar{
    string  value
 }
 ```
+```C#
+
+   dt getRoles();
+   dt getEmployees();
+   
+   on submit check avail -> notifi if cant add
+```
+
 configVar getresoursceList(location, resource_id)
 setresoursceList(configVar)
 set(setore,input,fielD)
