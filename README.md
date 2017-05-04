@@ -1,8 +1,8 @@
 # SchedulerApi
 
-[* Employee Availibility] (#Avail)  
-    [* Update] (#AvailPut)
-    [* Get] (#AvailGet)
+[Employee Availibility] (#Avail)  
+    [Update] (#AvailPut)
+    [Get] (#AvailGet)
 
 <div id="Avail">
 <div id="AvailPut">
