@@ -281,3 +281,5 @@ dt getSemployeeschedulue (empl_id)
 string setEmployeeSchedule(empl_id, dt)
 set/view configuration
 
+GET analysisForDay(dayOfWeek)
+PUT AnalysisForDay(
